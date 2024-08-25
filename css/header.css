@@ -1,0 +1,39 @@
+.header {
+    color: var(--primary-color);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    position: absolute;
+}
+
+.header__logo {
+    margin-bottom: 1rem;
+}
+
+.header__nav {
+    text-align: center;
+}
+
+.header__link {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
+
+.header__link:hover {
+    color: var(--brand-color);
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+}

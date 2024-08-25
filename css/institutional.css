@@ -1,0 +1,103 @@
+.institutional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color-dark);
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.institutional__title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.institutional__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.institutional__address {
+    font-size: 1.35rem;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.institutional__address-telephone,
+.institutional__address-email {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.institutional__address-telephone {
+    line-height: normal;
+}
+
+.institutional__address-email {
+    color: var(--primary-color);
+    text-decoration: underline;
+    display: block;
+}
+
+.institutional__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.institutional__contact-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.institutional__contact-button {
+    color: var(--primary-color);
+    border-color: var(--secondary-color-medium);
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.institutional__contact-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color-medium);
+}
+
+.institutional__hr {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .institutional__content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .institutional__contact {
+        width: 40%;
+    }
+}

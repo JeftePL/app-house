@@ -1,0 +1,123 @@
+.plans {
+    background-color: var(--primary-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.plans__title {
+    color: var(--secondary-color-dark);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.plans__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.125rem 0.625rem 0.125rem var(--shadow-color-dark);
+}
+
+.plans__card-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 0 .75rem 0;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.plans__card-content {
+    padding: 0 15% 7.5%;
+}
+
+.plans__card-price {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.plans__card-text {
+    color: var(--secondary-color-light);
+    line-height: 1.75;
+}
+
+.plans__card-button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    align-self: center;
+    padding: .75rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plans__card--start {
+    color: var(--start-plan-color);
+}
+
+.plans__card--ultra {
+    color: var(--ultra-plan-color);
+}
+
+.plans__card--mega {
+    color: var(--mega-plan-color);
+}
+
+.plans__card-button--start {
+    border-color: var(--start-plan-color);
+    transition: 0.3s;
+}
+
+.plans__card-button--start:hover {
+    background-color: var(--start-plan-color);
+    color: var(--primary-color);
+}
+
+.plans__card-button--ultra {
+    border-color: var(--ultra-plan-color);
+    transition: 0.3s;
+}
+
+.plans__card-button--ultra:hover {
+    background-color: var(--ultra-plan-color);
+    color: var(--primary-color);
+}
+
+
+.plans__card-button--mega {
+    border-color: var(--mega-plan-color);
+    transition: 0.3s;
+}
+
+.plans__card-button--mega:hover {
+    background-color: var(--mega-plan-color);
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 992px) {
+    .plans__cards {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+}

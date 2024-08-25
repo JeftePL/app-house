@@ -1,0 +1,54 @@
+.differentials {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.differentials__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.differentials__item {
+    max-width: 350px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: top 1.25rem left 2.5rem;
+    background-size: 25px;
+    padding: 1.6rem 0 2rem 5rem;
+    margin-left: -2.5rem;
+}
+
+.differentials__item--time {
+    background-image: url(../img/watch-icon.png);
+}
+
+.differentials__item--focus {
+    background-image: url(../img/money-icon.png);
+}
+
+.differentials__item--experts {
+    background-image: url(../img/chemistry-icon.png);
+}
+
+.differentials__item-title {
+    color: var(--secondary-color-dark);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.differentials__item-text {
+    line-height: normal;
+}
+
+@media screen and (min-width: 992px) {
+    .differentials__list {
+        justify-content: space-around;
+    }
+
+    .differentials__item {
+        margin-left: 0;
+    }
+}
